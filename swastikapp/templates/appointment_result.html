@@ -1,0 +1,36 @@
+{% include 'navbar.html' %}
+{% load static%}
+{% comment %} <link rel = "stylesheet" href = "{% static 'css/appointmentform.css'%}"> {% endcomment %}
+<style>
+body{
+    margin: 0;
+}
+p{
+    font-size: 20px;
+}
+
+</style>
+
+
+
+<div class = "result">
+<center>
+<h1>Appointment booked</h1>
+
+<p>Your Appointment Details are:</p><br><br>
+<p>Name: {{your_name}}</p>
+<p>Phone: {{your_phone}}</p>
+<p>Address: {{your_address}}</p>
+<p>E-mail: {{your_email}}</p>
+<p>Appointment day: {{appointment_day}}</p>
+<p>Time: {{appointment_time}}</p>
+<p>Doctor: {{your_doctor}}</p>
+<p>Remark: {{your_message}}</p>
+<small style = "color: red;"> Note: Our Doctor will confirm appointment by calling you.</small>
+<br>
+</div>
+</center>
+<br>
+<hr>
+
+{% include 'footer.html'%}    

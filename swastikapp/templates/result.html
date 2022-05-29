@@ -1,0 +1,30 @@
+{% load static%}
+{% include 'navbar.html' %}
+<html>
+  <head>
+    <title>Reuslt</title>
+    <link rel = "stylesheet" href = "{% static 'css/result.css'%}">
+  </head>
+  <body>
+    
+       <h4>According to our calculation we can predict that you might have :<b> <br>{{Disease}} {{Medicine}}</b></h4>
+
+    
+      {% if Disease == 'Cholera'%}
+            <img src = "{% static 'images/sanchol.jpg'%}">
+
+      {% elif Disease == 'Malaria' %}<br>
+        <img src = "{%static 'images/malaria.jpeg' %}">
+
+      {% elif Disease == 'Measles' %}<br>
+      <img src = "{% static 'images/measles.jpg'%}">
+      
+      {% elif Disease == 'Kala zar' %}<br>
+      <img src = "{% static 'images/kalazar.jpg'%}">
+      {% endif%}
+    <br>
+<center>
+    <a href = "appointment"><button>Book your appointment</button></a>
+</center>
+  </body>
+</html>

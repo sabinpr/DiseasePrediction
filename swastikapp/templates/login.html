@@ -1,0 +1,31 @@
+
+{%load static%}
+{% block content %}      
+
+
+{%include 'navbar.html'%}
+
+<style>
+	body{
+		margin:0;
+	}
+</style>
+<link rel = "stylesheet" href = "{% static 'css/authentication.css'%}">
+{% load crispy_forms_tags %}
+
+<center>
+  <form method="POST">
+    <h1>Login</h1>
+
+    {% csrf_token %}
+
+    {{login_form|crispy}}
+
+<br><br>
+<button class="btn btn-primary" type="submit">Login</button>
+    <p>Don't have an account? <a href="/register">Create an account</a>.</p>
+
+  </form>
+</center>
+
+{% endblock %}

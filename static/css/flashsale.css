@@ -1,0 +1,34 @@
+.flashsale{
+    width: 100%;
+    display: flex;
+    padding-top: 100px;
+    margin: auto;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.flashdesc img{
+    width: 100%;
+    padding-left: 90px;
+    position: relative;
+}
+
+.flashdesc h3{
+    font-size: 30px;
+    padding-bottom: -200px;
+    /*margin-lefsst: -600px;*/
+    font-family: chilanka;
+    text-align: justify;
+}
+
+.flashdesc h1{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 60px;
+    padding-bottom: -200px;
+    margin-right: auto;
+    color: red;
+}
+
+  

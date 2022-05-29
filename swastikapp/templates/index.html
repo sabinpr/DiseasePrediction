@@ -1,0 +1,183 @@
+<html>
+  <head>
+    <title>Deploy Ml model</title>
+    {%load static%}
+    {% include 'navbar.html'%}
+    <link rel = "stylesheet" href = "{% static 'css/predict.css'%}">
+
+  </head>
+
+  <body>
+    
+    <h2>Disease Check</h2>
+
+    <form action="predict" method="POST">
+      {% csrf_token %}
+
+
+        <legend>Personal Information</legend>
+
+        <span class="label-input100">Full Name :</span>
+        <input class="input100" type="text" name="name" placeholder="Enter full name" required>
+        <br/><br/>
+
+        <span class="label-input100">Your Age :</span>
+        <input class="input100" type="text" name="age" placeholder="Enter Your Age" required width = 20>
+
+        <br /><br />
+
+
+
+      <span class="label-input100">Rahness : </span>
+      
+      <select name="rashness">
+        <option>No</option>
+        <option>Low</option>
+        <option>Mild</option>
+        <option>High</option>
+      </select>
+      <br /><br />
+
+
+
+      <span class="label-input100" style="left: -120px">Swelling Eyes :</span>
+      <select name="swellineyes">
+        <option>No</option>
+        <option>Low</option>
+        <option>Mild</option>
+        <option>High</option>
+      </select>
+      
+      <br /><br />
+
+
+      <span class="label-input100" style="left: -130px">Diarrhea :</span>
+      <select name="diarrhea">
+        <option>No</option>
+        <option>Low</option>
+        <option>Mild</option>
+        <option>High</option>
+      </select>
+      <br /><br />
+
+
+
+      <span class="label-input100">Dehydration :</span>
+      <select name="dehydration">
+        <option>No</option>
+        <option>Low</option>
+        <option>Mild</option>
+        <option>High</option>
+      </select>
+
+      <br /><br />
+
+
+
+
+      <span class="label-input100" style="left: -150px">Pressure :</span>
+      <select name="pressure">
+        <option>No</option>
+        <option>Low</option>
+        <option>Mild</option>
+        <option>High</option>
+      </select>
+      <br /><br /> 
+
+
+      <span class="label-input100" style="left: -150px">Fever :</span>
+      <select name="fever">
+        <option>No</option>
+        <option>Low</option>
+        <option>Mild</option>
+        <option>High</option>
+      </select>
+      <br /><br />
+
+
+
+      <span class="label-input100" style="left: -150px">Headache :</span>
+      <select name="headache">
+        <option>No</option>
+        <option>Low</option>
+        <option>Mild</option>
+        <option>High</option>
+      </select>
+      <br /><br />
+
+
+
+      <span class="label-input100" style="left: -150px">Vomiting :</span>
+      <select name="vomiting">
+        <option>No</option>
+        <option>Low</option>
+        <option>Mild</option>
+        <option>High</option>
+      </select>
+      <br /><br />
+
+
+
+      <span class="label-input100" style="left: -150px">Muscleache :</span>
+      <select name="muscleache">
+        <option>No</option>
+        <option>Low</option>
+        <option>Mild</option>
+        <option>High</option>
+      </select>
+      <br /><br />
+
+
+
+      <span class="label-input100" style="left: -150px">Sweat :</span>
+      <select name="sweat">
+        <option>No</option>
+        <option>Low</option>
+        <option>Mild</option>
+        <option>High</option>
+      </select>
+      <br /><br />
+
+
+
+
+      <span class="label-input100" style="left: -150px">Scalyskin :</span>
+      <select name="scalyskin">
+        <option>No</option>
+        <option>Low</option>
+        <option>Mild</option>
+        <option>High</option>
+      </select>
+      <br /><br />
+
+
+
+      <span class="label-input100" style="left: -150px">Cough :</span>
+      <select name="cough">
+        <option>No</option>
+        <option>Low</option>
+        <option>Mild</option>
+        <option>High</option>
+      </select>
+      <br /><br />
+
+
+
+      <span class="label-input100" style="left: -150px"
+      >Enlargement of Liver :</span>
+      <select name="smoothness">
+        <option>No</option>
+        <option>Low</option>
+        <option>Mild</option>
+        <option>High</option>
+      </select>
+      <br /><br />
+
+
+
+      <button>Submit</button>
+
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+
+background-color: grey;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+}
+h4{
+    text-align: center;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+button{
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    /* color: white; */
+    background-color: green;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.5;
+}

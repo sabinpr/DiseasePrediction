@@ -1,0 +1,36 @@
+body{
+    text-align:center; 
+    font-family: Times New Roman;
+    background-color: grey;
+}
+
+form{
+    margin-top: 100px;
+    margin-left: 100px;
+
+    border-radius: 50px;
+    padding-top: 100px;
+    border: 1px solid pink;
+    width: 60%;
+    align-items:center;
+    background-color: pink;
+
+}
+
+button{
+    height: 30px;
+    width: 80px;
+    border:none;
+    background-color: green;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    opacity: 0.8;
+}
+p{
+    text-align: center;
+    color: black;
+}

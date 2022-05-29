@@ -1,0 +1,28 @@
+{% load static%}
+{% block content %} 
+{%include 'navbar.html'%}
+
+<style>
+	body{
+		margin:0;
+	}
+</style>
+<link rel = "stylesheet" href = "{% static 'css/registration.css'%}">
+
+{% load crispy_forms_tags %}         
+
+
+	<form method="POST">
+		<h1>Register</h1>
+
+		{% csrf_token %}
+		   {{ register_form|crispy }}                    
+		<button class="btn btn-primary" type="submit">Register</button>
+
+        {% comment %} {{form.errors}} {% endcomment %}
+
+		<p><b>If you already have an account, <a href="/login">login</a> instead.</b></p>
+	</form>
+	
+
+{% endblock %}
